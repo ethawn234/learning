@@ -1,0 +1,33 @@
+Relation to Linked Lists
+
+    Linked Lists are a good way to implement stacks and queues because of they're optimized to
+    handle insertions/deletions at the start and end, which is the major point of queues and
+    stacks.
+
+Last In First Out and First In First Out are execution orders used in STACKS and QUEUES respectively.
+
+LIFO in Stacks
+    For stacks, think of nesting functions calls. The inner-most nested functions executes first, and continues
+    executing the next out function, until terminating at the outer-most function.
+
+    Stacks work solely on the head node, which makes sense since LIFO. We're only ever concerned with the head
+    node.
+
+    METHODS
+        `push` to add to head
+        `pop` to remove from head
+
+
+FIFO in Queues
+    For queues, just think of a line of people. You expect a queue to serve the first in, and finishing with the
+    last person.
+
+    Queues add to the tail node and remove from the head node.
+
+    METHODS
+        `enqueue`
+            1. create new node instance
+            2. find and verify the tail node
+            3. point the existing tail node to the new node
+            4. define the new node as the Queues' new tail node
+        `dequeue`
